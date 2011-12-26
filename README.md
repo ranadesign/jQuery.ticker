@@ -1,4 +1,4 @@
-#&quot;jQuery.twSearchList&quot; jQuery plugin
+#&quot;jQuery.ticker&quot; jQuery plugin
 
 ##Description
 一行のテキストが横に流れるティッカーを表示するjQueryプラグインです。
