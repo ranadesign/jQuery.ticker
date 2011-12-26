@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>jQuery.ticker Demo</title>
+<link rel="stylesheet" href="jquery.ticker.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script> if (!window.jQuery) { document.write('<script src="jquery-1.7.1.min.js"><' + '/script>'); } </script>
+<script src="jquery.ticker.js"></script>
+<script>
+$(function() {
+$('#ticker1').ticker({
+	duration: 500
+});
+});
+</script>
+<style>
+.ticker {
+	width: 600px;
+	border: 1px solid #ccc;
+}
+.ticker ul {
+	margin: 0;
+	padding: 0;
+	*zoom: 1;
+}
+.ticker ul:after {
+	content:""; display:block; clear:both;
+}
+.ticker li {
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 0;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+/* for Debug mode */
+.inner1 { background-color: #fcc; } 
+.inner2 { background-color: #ccf; } 
+</style>
+</head>
+<body>
+
+<h1>jQuery.ticker Demo</h1>
+
+<section>
+	<h2>text list</h2>
+	<div class="ticker" id="ticker1">
+	<ul>
+	<li class="ticker-item">Text List 1 Text List 1 Text List 1 Text List 1 Text List 1 </li>
+	<li class="ticker-item">Text List 2 Text List 2 Text List 2 Text List 2 Text List 2 Text List 2 Text List 2 </li>
+	<li class="ticker-item">Text List 3 Text List 3 Text List 3 Text List 3 Text List 3 </li>
+	<li class="ticker-item">Text List 4 Text List 4 Text List 4 Text List 4 Text List 4 Text List 4 Text List 4 </li>
+	</ul>
+	<!--/#ticker1--></div>
+</section>
+
+</body>
+</html>
